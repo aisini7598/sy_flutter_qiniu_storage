@@ -51,7 +51,7 @@
     [manager putFile:filepath key:key token:token complete:^(QNResponseInfo *info, NSString *key, NSDictionary *resp) {
         NSLog(@"info %@", info);
         NSLog(@"resp %@",resp);
-        result(@(info.isOK));
+        result(resp);
     } option:(QNUploadOption *) opt];
 }
 

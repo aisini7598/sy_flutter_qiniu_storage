@@ -94,7 +94,7 @@ public class SyFlutterQiniuStoragePlugin implements MethodCallHandler,EventChann
           Log.i("qiniu", "Upload Fail: "+info.error);
           //如果失败，这里可以把info信息上报自己的服务器，便于后面分析上传错误原因
         }
-        result.success(info.isOK());
+        result.success(res);
         Log.i("qiniu", key + ",\r\n " + info + ",\r\n " + res);
       }
     };
